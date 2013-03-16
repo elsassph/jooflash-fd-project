@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>$(ProjectName)</title>
+</head>
+<body>
+<h1>$(ProjectName)</h1>
+
+<script type="text/javascript" src="joo/jangaroo-application.js"></script>
+<script type="text/javascript">
+  joo.classLoader.run("$(PackageDot)Main");
+</script>
+</body>
+</html>

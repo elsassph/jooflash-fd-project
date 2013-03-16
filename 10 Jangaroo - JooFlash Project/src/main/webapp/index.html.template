@@ -9,15 +9,13 @@
     body {
       width: 100%;
       height: 100%;
-    }
-    body, #stage {
-      margin: 0;
-      padding: 0;
+      background: #ffffff;
+      font: 12pt Arial;
     }
   </style>
 </head>
 <body>
-<div id="stage">
+<div id="stage" style="width:640px; height:480px;">
   $(ProjectName) not (yet) loaded
 </div>
 
@@ -26,7 +24,7 @@
   joo.classLoader.run(
     "joo.flash.Run",
     "stage",
-    "$(PackageName).Main");
+    "$(PackageDot)Main");
 </script>
 
 </body>

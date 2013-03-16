@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>$(ProjectName)</artifactId>
+  <artifactId>$(ProjectId)</artifactId>
   <groupId>net.jangaroo.flash.app</groupId>
-  <version>0.9.5-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <packaging>war</packaging>
 
@@ -23,8 +23,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jangaroo_version>0.9.5</jangaroo_version>
-    <jangaroo_libs_version>0.9.5</jangaroo_libs_version>
+    <jangaroo_version>1.0.1</jangaroo_version>
+    <jangaroo_libs_version>1.0.1</jangaroo_libs_version>
     <jetty_version>7.2.2.v20101205</jetty_version>
   </properties>
 
@@ -78,13 +78,20 @@
   </build>
 
   <dependencies>
-    <!-- To use Jangaroo Flash library, all you need is this dependency: -->
+    <!-- To use Jangaroo Flash library, you need this dependency: -->
     <dependency>
       <groupId>net.jangaroo</groupId>
       <artifactId>jooflash</artifactId>
       <version>${jangaroo_libs_version}</version>
       <type>jangaroo</type>
     </dependency>
+    <!-- To use the Browser API, you need this dependency:
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>jangaroo-browser</artifactId>
+      <version>${jangaroo_libs_version}</version>
+      <type>jangaroo</type>
+    </dependency> -->
   </dependencies>
 
 </project>

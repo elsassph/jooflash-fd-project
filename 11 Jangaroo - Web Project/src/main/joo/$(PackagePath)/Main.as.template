@@ -1,0 +1,18 @@
+package $(PackageName)$(CSLB){
+	
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class Main $(CSLB){
+	
+		public function Main() $(CSLB){
+			
+		}
+		
+		static public function main() $(CSLB){
+			// Entry point
+			window.alert("Hello world");
+		}
+	}
+}

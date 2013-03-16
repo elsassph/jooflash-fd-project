@@ -2,13 +2,15 @@
 <project>
   <!-- Output SWF options -->
   <output>
-    <movie disabled="True" />
+    <movie outputType="CustomBuild" />
     <movie input="" />
     <movie path="" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
-    <movie version="9" />
+    <movie version="0" />
+    <movie minorVersion="0" />
+    <movie platform="Custom" />
     <movie background="#FFFFFF" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
@@ -47,7 +49,8 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <!-- example: <element path="..." /> -->
+    <element path="lib\jangaroo-runtime-1.0.1.jar" />
+    <element path="lib\jooflash-1.0.1.jar" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -76,10 +79,11 @@
   <!-- Executed before build -->
   <preBuildCommand>cmd /C mvn package -DskipTests</preBuildCommand>
   <!-- Executed after build -->
-  <postBuildCommand alwaysRun="False">cmd /C "start $(ProjectDir)\target\$(ProjectName)\index.html"</postBuildCommand>
+  <postBuildCommand alwaysRun="False" />
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
-    <option testMovie="Default" />
+    <option testMovie="OpenDocument" />
+    <option testMovieCommand="target/$(ProjectId)/index.html" />
   </options>
 </project>
