@@ -22,7 +22,7 @@ Now, install [FlashDevelop](http://www.flashdevelop.org).
 
 To set up the Jangaroo Flash Project template for FlashDevelop
 
-1. Download this project as a [`ZIP`](https://github.com/fwienber/jooflash-fd-project/zipball/master),
+1. Download this project as a [`ZIP`](https://github.com/elsassph/jooflash-fd-project/archive/master.zip),
 2. unzip the subfolders `10 Jangaroo - JooFlash Project` and `11 Jangaroo - Web Project` contained in the archive into the `Projects` directory of your FlashDevelop installation. (You may have to unzip to a temporary directory and copy over to the program directory to be asked for admin rights.)
 
 Then, you can create Jangaroo HTML5 Flash Applications from FlashDevelop using
@@ -33,7 +33,7 @@ Then, you can create Jangaroo HTML5 Flash Applications from FlashDevelop using
 
    You usually want to check `Create directory for project`.
 
-![screenshot](https://github.com/fwienber/jooflash-fd-project/raw/master/FlashDevelop-Jangaroo-Flash-Project-Screenshot.png "Dialog for creating a Jangaroo project in FlashDevelop")
+![screenshot](https://github.com/elsassph/jooflash-fd-project/raw/master/FlashDevelop-Jangaroo-Flash-Project-Screenshot.png "Dialog for creating a Jangaroo project in FlashDevelop")
 
 Now you can build the project using the `Test Project` toolbar button (or press F5 or Ctrl+Enter). Maven is invoked and compiles and builds your Web application.
 Then, your default browser opens your Jangaroo application.
